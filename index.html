@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>DataViz SNCF</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" alt="">
+    </header>
+    <section id="cardContainer">
+        <div class="linkCard">
+            <img src="./img/craiyon_183424_trash_heap_pile_of_random_items.png"
+                alt="Image illustrant des objets perdus">
+            <p>Jeu de données : objets trouvés</p>
+            <a href="https://public.tableau.com/app/profile/florian.amiot/viz/SAESNCFDelormeAmiot/Tableaudebord1"
+                class="goTo" target="_blank">Accéder au classeur</a>
+        </div>
+        <div class="linkCard">
+            <img src="./img/craiyon_183508_Xenon_Difluoride_is_a_chemical_compound_with_the_formula_XeF2__It_was_discovered_in_t.png"
+                alt="Image illustrant du CO2">
+            <p>Jeu de données : CO2</p>
+            <a href="https://public.tableau.com/app/profile/maximilien.delorme/viz/Indicateursdemesure_17036961113050/Tableaudebord1"
+                class="goTo" target="_blank">Accéder au classeur</a>
+        </div>
+        <div class="linkCard">
+            <img src="./img/craiyon_183551_railroads_metro_station_warm_colors_high_detailed.png"
+                alt="Image illustrant une gare">
+            <p>Jeu de données de notre choix (Référencement des gares SNCF en France)</p>
+            <a href="https://public.tableau.com/app/profile/maximilien.delorme/viz/cartedunombredegarel_17020318143560/Tableaudebord1"
+                class="goTo" target="_blank">Accéder au classeur</a>
+        </div>
+        <div class="linkCard">
+            <img src="./img/craiyon_183656_train_moving_in_a_surreal_landscape_with_floating_ideas.png"
+                alt="Image illustrant un train">
+            <p>Jeu de données : régularité des trains</p>
+            <a href="https://public.tableau.com/app/profile/maximilien.delorme/viz/PonctualitdesTGV/Tableaudebord1"
+                class="goTo" target="_blank">Accéder au classeur</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Indacteurs pertinents</h2>
+        <div class="apiCard">
+            <div class="indic1"></div>
+            <div class="indic2"></div>
+            <div class="indic3"></div>
+        </div>
+
+        <div class="carte">
+            <h2>Carte de restauration des bar TGV</h2>
+            <div class="carteSlider"></div>
+        </div>
+
+        <div class="anomalies">
+            <h2>Propreté des gares SNCF de France</h2>
+            <p>Les anomalies représentent les éléments non conformes concernant la propreté des gares. Un haut taux
+                d'anomalies traduit un haut taux d'observation de prestation de nettoyage non conformes. <span>En
+                    d'autres termes, plus les anomalies sont hautes, moins la gare est propre</span> (à juger également
+                en fonction du trafic de celle-ci).</p>
+            <canvas id="appChart"></canvas>
+            <p class="indic6"></p>
+            <p class="indic7"></p>
+        </div>
+
+        <div class="choix">
+            <h2>Répartition générale des employés de SNCF et informations supplémentaires</h2>
+            <p>Ces graphiques représentent la répartition des gens travaillant à la SNCF selon deux facteurs : d'abord
+                le genre et ensuite le nombre de personnes en situation de handicap.</p>
+            <h3>Hommes et Femmes</h3>
+            <div><canvas id="appChartSexe"></canvas></div>
+            <h3>Personnes en situation de handicap</h3>
+            <canvas id="appChartHandicap"></canvas>
+            <div class="indicateursAuChoix">
+                <div class="indic4"></div>
+                <div class="indic5"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h4>Amiot Florian</h4>
+        <h4>Delorme Maximilien</h4>
+    </footer>
+    <script src="./assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+</body>
+
+</html>
